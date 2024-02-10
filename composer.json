@@ -1,0 +1,27 @@
+{
+	"name": "prox/social-influence",
+	"description": "Adds autoload and required vendors for my project",
+	"type": "wordpress-plugin",
+	"require": {
+		"php": "^7.4 || ^8.0",
+		"composer/installers": "^1.4"
+	},
+	"authors": [
+		{
+			"name": "Marcel Santing",
+			"email": "marcel@prox-web.nl"
+		}
+	],
+	"minimum-stability": "stable",
+	"autoload": {
+		"psr-4": {
+			"Prox\\": "src/"
+		},
+		"files": ["functions.php"]
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	}
+}
