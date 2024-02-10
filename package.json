@@ -1,6 +1,8 @@
 {
 	"scripts": {
 		"pwd": "wp-env run cli --env-cwd=./wp-content/plugins/social-influence/ pwd",
+		"phpcs": "wp-env run cli --env-cwd=wp-content/plugins/social-influence vendor/bin/phpcs",
+		"bash": "wp-env run cli bash --env-cwd=./wp-content/plugins/social-influence/ pwd",
 		"composer": "wp-env run cli --env-cwd=./wp-content/plugins/social-influence composer",
 		"start_php": "wp-env run cli --env-cwd=./wp-content/plugins/social-influence/composer update",
 		"test": "wp-env run cli --env-cwd=./wp-content/plugins/social-influence composer test"

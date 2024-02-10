@@ -21,9 +21,8 @@ class ComposerStaticInit25976f83a86f729284828dda691501e5
         ),
         'P' => 
         array (
-            'Prox\\' => 5,
+            'Prox_Social_Influence\\' => 22,
             'PhpParser\\' => 10,
-            'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 57,
         ),
         'M' => 
         array (
@@ -33,6 +32,7 @@ class ComposerStaticInit25976f83a86f729284828dda691501e5
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+            'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 55,
         ),
         'C' => 
         array (
@@ -45,17 +45,13 @@ class ComposerStaticInit25976f83a86f729284828dda691501e5
         array (
             0 => __DIR__ . '/..' . '/10up/wp_mock/php/WP_Mock',
         ),
-        'Prox\\' => 
+        'Prox_Social_Influence\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => '/',
         ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
-        ),
-        'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
         ),
         'Mockery\\' => 
         array (
@@ -68,6 +64,10 @@ class ComposerStaticInit25976f83a86f729284828dda691501e5
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
         ),
         'Composer\\Installers\\' => 
         array (
