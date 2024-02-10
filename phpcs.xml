@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset>
+	<description>Prox WordPress Coding standards</description>
+
+	<!-- Run against the PHP_CodeSniffer core tests -->
+	<arg value="p"/>
+
+	<!-- Paths to check -->
+	<file>./</file>
+
+	<!-- Include WordPress standards -->
+	<rule ref="WordPress-Core">
+		<exclude name="WordPress.PHP.DisallowShortTernary.Found"/>
+	</rule>
+	<rule ref="WordPress-Docs"/>
+	<rule ref="WordPress-Extra"/>
+
+	<!-- You can also enable or disable specific rules, for example: -->
+	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterCloseParenthesis"/>
+	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterOpenParenthesis"/>
+
+	<!-- Exclude some files -->
+	<!-- <exclude-pattern>*/path/to/files/*</exclude-pattern> -->
+</ruleset>
