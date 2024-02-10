@@ -6,6 +6,20 @@
 		"php": "^7.4 || ^8.0",
 		"composer/installers": "^1.4"
 	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "*",
+		"squizlabs/php_codesniffer": "*",
+		"johnpbloch/wordpress-core": "*",
+		"10up/wp_mock": "^0.4.2",
+		"phpunit/phpunit": "^9"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+		],
+		"start-env": "wp-env start",
+		"test": "phpunit"
+	},
 	"authors": [
 		{
 			"name": "Marcel Santing",
@@ -21,7 +35,8 @@
 	},
 	"config": {
 		"allow-plugins": {
-			"composer/installers": true
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
 		}
 	}
 }
