@@ -2852,7 +2852,6 @@
     "dev-package-names": [
         "10up/wp_mock",
         "antecedent/patchwork",
-        "dealerdirect/phpcodesniffer-composer-installer",
         "doctrine/instantiator",
         "hamcrest/hamcrest-php",
         "johnpbloch/wordpress-core",
@@ -2865,7 +2864,6 @@
         "phpcompatibility/phpcompatibility-paragonie",
         "phpcompatibility/phpcompatibility-wp",
         "phpcsstandards/phpcsextra",
-        "phpcsstandards/phpcsutils",
         "phpunit/php-code-coverage",
         "phpunit/php-file-iterator",
         "phpunit/php-invoker",
@@ -2888,7 +2886,6 @@
         "sebastian/resource-operations",
         "sebastian/type",
         "sebastian/version",
-        "squizlabs/php_codesniffer",
         "theseer/tokenizer",
         "wp-coding-standards/wpcs"
     ]

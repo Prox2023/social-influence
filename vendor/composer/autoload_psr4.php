@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'WP_Mock\\' => array($vendorDir . '/10up/wp_mock/php/WP_Mock'),
-    'Prox_Social_Influence\\' => array('/'),
+    'Prox\\' => array('/'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Mockery\\' => array($vendorDir . '/mockery/mockery/library/Mockery'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),

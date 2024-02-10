@@ -56,7 +56,7 @@
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../dealerdirect/phpcodesniffer-composer-installer',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'doctrine/instantiator' => array(
             'pretty_version' => '2.0.0',
@@ -179,7 +179,7 @@
             'type' => 'phpcodesniffer-standard',
             'install_path' => __DIR__ . '/../phpcsstandards/phpcsutils',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'phpunit/php-code-coverage' => array(
             'pretty_version' => '9.2.30',
@@ -407,7 +407,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../squizlabs/php_codesniffer',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.2',

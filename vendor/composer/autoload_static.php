@@ -21,7 +21,7 @@ class ComposerStaticInit25976f83a86f729284828dda691501e5
         ),
         'P' => 
         array (
-            'Prox_Social_Influence\\' => 22,
+            'Prox\\' => 5,
             'PhpParser\\' => 10,
         ),
         'M' => 
@@ -45,7 +45,7 @@ class ComposerStaticInit25976f83a86f729284828dda691501e5
         array (
             0 => __DIR__ . '/..' . '/10up/wp_mock/php/WP_Mock',
         ),
-        'Prox_Social_Influence\\' => 
+        'Prox\\' => 
         array (
             0 => '/',
         ),

@@ -1,11 +1,12 @@
 <?php
 /**
+ * Prox Main Class
  * This file establishes the Main functionality for the Prox application.
  *
  * @package    Prox
  * @subpackage Prox_Main
- * @author     Squiz Pty Ltd <products@squiz.net>
- * @copyright  2024 Squiz Pty Ltd (ABN 77 084 670 600)
+ * @author     Prox-web<support@prox-web.nl>
+ * @copyright  2024 Prox-web
  * @license    MIT
  * @since      1.0.0
  */
