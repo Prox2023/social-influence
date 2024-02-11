@@ -71,7 +71,12 @@ class ProxMain {
 		);
 
 		// Enqueue your stylesheet
-		//wp_enqueue_style( 'prox-style', get_stylesheet_uri() );
+		wp_enqueue_style(
+			'prox-social-influence-css',
+			plugins_url('/assets/dist/main.css', __FILE__),
+			array(),
+			filemtime(plugin_dir_path(__FILE__). '/assets/dist/main.css')
+		);
 	}
 
 	/**
