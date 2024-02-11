@@ -21,6 +21,58 @@
 	overflow: auto;
 	border-radius: $border-radius;
 	box-shadow: $box-shadow;
+	position: relative;
+
+	.prox-header {
+		background: $color-red;
+		color: $color-white;
+		text-shadow: black 1px 1px 1px;
+		padding: $spacing-md;
+		text-align: center;
+		height: 8vh;
+		h1 {
+			font-size: 1.5rem;
+			color: $color-white !important;
+		}
+	}
+
+	.prox-sidebar {
+		background: $color-grey-light;
+		width: 20vh;
+		height: 80vh;
+		position: absolute;
+		ul {
+			list-style: none;
+			padding: 1rem 0.25rem;
+			margin: 0;
+
+			li {
+				background: $color-red;
+				display: block;
+				padding: $spacing-sm;
+				text-align: center;
+				color: $color-white;
+
+				a {
+					color: $color-white;
+					text-decoration: none;
+
+				}
+
+				&:hover {
+					background: lighten($color-red, $proxLighter);
+					color: $color-red;
+				}
+
+				&.active {
+					background: lighten($color-white, $proxLighter);
+					a{
+						color: $color-red;
+					}
+				}
+			}
+		}
+	}
 
 	/* Let's create a custom scrollbar */
 	&::-webkit-scrollbar {
@@ -28,11 +80,11 @@
 	}
 
 	&::-webkit-scrollbar-track {
-		background: #f1f1f1;
+		background: $color-red;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background: #888;
+		background: $color-black;
 	}
 
 	&::-webkit-scrollbar-thumb:hover {
