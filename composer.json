@@ -34,7 +34,7 @@
 	"minimum-stability": "stable",
 	"autoload": {
 		"psr-4": {
-			"Prox\\": "/"
+			"Prox\\": "./"
 		},
 		"files": ["functions.php"]
 	},

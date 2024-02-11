@@ -47,7 +47,7 @@ class ComposerStaticInit25976f83a86f729284828dda691501e5
         ),
         'Prox\\' => 
         array (
-            0 => '/',
+            0 => __DIR__ . '/../..' . '/',
         ),
         'PhpParser\\' => 
         array (
