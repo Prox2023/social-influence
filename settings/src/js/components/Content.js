@@ -1,10 +1,9 @@
 import React from "react";
-
+import PieChartWidget from "./widgets/PieChartWidget";
 const Content = () => {
   return (
 	<div>
-	  <h1>Welcome to Prox AI Editor</h1>
-	  {/* Your component's content goes here */}
+	  <PieChartWidget />
 	</div>
   );
 };

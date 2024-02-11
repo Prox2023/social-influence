@@ -1,17 +1,23 @@
 import React from "react";
 import useMenuStore from "../stores/MenuStore";
 import MenuItem from "./MenuItem";
+import Content from "./Content";
 
 const Menu = () => {
 	const { menu} = useMenuStore();
 	console.log(menu);
 
 	function buildMenu() {
-		return menu.map((item) => (
-			<MenuItem key={item.id}
-					  href={item.link}
-					  title={item.title} />
-		));
+		return menu.map((item) => {
+			let isActive = item.id === 1;
+			return (
+				<MenuItem key={item.id}
+						  href={item.link}
+						  title={item.title}
+						  isActive={isActive}
+				/>
+			);
+		});
 	}
 	return (
 		<div>
@@ -26,7 +32,6 @@ const Menu = () => {
 					</ul>
 				</div>
 			</div>
-			{/* Your component's content goes here */}
 		</div>
 	);
 }

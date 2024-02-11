@@ -28,6 +28,7 @@
 	},
 	"dependencies": {
 		"@wordpress/components": "^25.11.0",
+		"react-minimal-pie-chart": "^8.4.0",
 		"zustand": "^4.5.0"
 	}
 }
