@@ -1,0 +1,58 @@
+
+.prox-card {
+	// Common styles for all cards
+	width: 100%;
+	// ... more common styles here ...
+
+	// modifier for sm
+	&--sm {
+		// Styles only for sm cards
+		width: 200px;
+	}
+
+	// modifier for md
+	&--md {
+		// Styles only for md cards
+		width: 400px;
+	}
+
+	// modifier for lg
+	&--lg {
+		// Styles only for lg cards
+		width: 600px;
+	}
+
+	// modifier for xl
+	&--xl {
+		// Styles only for xl cards
+		width: 800px;
+	}
+
+	// You can define other modifiers below
+	// ...
+	float: left;
+	box-shadow: $box-shadow;
+	border-radius: $border-radius;
+	overflow: hidden;
+	margin: $margin-sm;
+	.header {
+		border-top-left-radius: $border-radius;
+		border-top-right-radius: $border-radius;
+		background: $header-soft-background;
+		color: $header-text-color;
+		padding: $header-padding;
+		text-align: $header-text-align;
+		font-weight: bold;
+		// styles for card header
+	}
+
+	.content {
+		// styles for card content
+		padding: $spacing-sm;
+	}
+
+	.footer {
+		// Add your footer styles here
+	}
+}
+// Path: components.scss

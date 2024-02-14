@@ -18,11 +18,11 @@ describe('Social Influence', () => {
 			expect(response.status).to.eq(200);
 			expect(response.headers).to.have.property('content-type', 'text/javascript');
 		});
-		//
-		// // Check if 'prox-style' CSS is loaded
-		// cy.request(get_stylesheet_uri()).then((response) => { // replace get_stylesheet_uri() with actual style file path
-		// 	expect(response.status).to.eq(200);
-		// 	expect(response.headers).to.have.property('content-type', 'text/css');
-		// });
+
+		// Check if 'prox-style' CSS is loaded
+		cy.request('wp-content/plugins/social-influence/assets/dist/main.css').then((response) => { // replace get_stylesheet_uri() with actual style file path
+			expect(response.status).to.eq(200);
+			expect(response.headers).to.have.property('content-type', 'text/css');
+		});
 	});
 });
