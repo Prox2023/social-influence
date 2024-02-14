@@ -4,22 +4,23 @@
 	"type": "wordpress-plugin",
 	"require": {
 		"php": "^7.4 || ^8.0",
-		"composer/installers": "^1.4",
-		"phpcsstandards/phpcsutils": "^1.0"
+		"composer/installers": "^1.4"
 	},
 	"require-dev": {
-		"wp-coding-standards/wpcs": "*",
-		"squizlabs/php_codesniffer": "*",
 		"johnpbloch/wordpress-core": "*",
 		"10up/wp_mock": "^0.4.2",
-		"phpunit/phpunit": "^9",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-		"phpcompatibility/php-compatibility": "^9.3",
-		"phpcompatibility/phpcompatibility-wp": "^2.1"
+		"phpunit/phpunit": "^9"
 	},
 	"scripts": {
 		"post-install-cmd": [
-			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs,vendor/phpcompatibility/php-compatibility,vendor/phpcompatibility/phpcompatibility-wp"
+			"composer global require wp-coding-standards/wpcs:*",
+			"composer global require squizlabs/php_codesniffer:*",
+			"composer global require dealerdirect/phpcodesniffer-composer-installer:^0.7.0",
+			"composer global require phpcsstandards/phpcsutils:^1.0",
+			"composer global require phpcompatibility/php-compatibility:^9.3",
+			"composer global require phpcompatibility/phpcompatibility-wp:^2.1",
+			"\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs,vendor/phpcompatibility/php-compatibility,vendor/phpcompatibility/phpcompatibility-wp",
+			"echo 'alias phpcs=\"$COMPOSER_HOME/vendor/bin/phpcs\"' >> ~/.bashrc && source ~/.bashrc"
 		],
 		"start-env": "wp-env start",
 		"test": "phpunit",
