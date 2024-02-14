@@ -31,6 +31,9 @@ const Menu = () => {
 						{buildMenu()}
 					</ul>
 				</div>
+				<div className={'prox-content'}>
+					<Content />
+				</div>
 			</div>
 		</div>
 	);

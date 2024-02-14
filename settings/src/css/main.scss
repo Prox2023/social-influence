@@ -1,4 +1,5 @@
 @import "variables";
+@import "core/components";
 
 * {
 	box-sizing: border-box;
@@ -72,6 +73,11 @@
 				}
 			}
 		}
+	}
+
+	.prox-content {
+		margin-left: 20vh;
+		padding: $spacing-md;
 	}
 
 	/* Let's create a custom scrollbar */

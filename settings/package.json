@@ -28,6 +28,8 @@
 	},
 	"dependencies": {
 		"@wordpress/components": "^25.11.0",
+		"apexcharts": "^3.45.2",
+		"react-apexcharts": "^1.4.1",
 		"react-minimal-pie-chart": "^8.4.0",
 		"zustand": "^4.5.0"
 	}
